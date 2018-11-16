@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Valentin Castro">
+    <title>Css Gradients</title>
+    <link rel="stylesheet" href="index.css"></link>
+</head>
+
+<body>
+    <div id="goLeft"></div>
+    <div id="goRight"></div>
+    <div id="mainBox">
+        <div class="displayBox">
+            <button class="textAreaCopyBtn" id="copyText">Copy</button>
+            <textarea readonly class="copyTextArea" id="genCssDiv"></textarea>
+        </div>
+        <div class="menuBox">
+          <button class="trnsprnt" id="toggleButton">Radial</button>
+          <select class="trnsprnt" id="selectBackGround" name="gradient">
+             <option value="Radar"> Radar </option>
+             <option value="YTtvBW">YTtvBW</option>
+             <option value="Lawrencium"> Lawrencium </option>
+             <option value="Clot"> Clot </option>
+             <option value="Socialive"> Socialive </option>
+          </select>
+        </div>
+        <div id="slidecontainer">
+            <input type="range" min="0" max="255" value="40" class="slider red" id="myRange">
+            <p>Layer1: R <span id="demo" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer2">
+            <input type="range" min="0" max="255" value="40" class="slider green" id="myRange2">
+            <p>Layer1: G <span id="demo2" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer3">
+            <input type="range" min="0" max="255" value="40" class="slider blue" id="myRange3">
+            <p>Layer1: B <span id="demo3" class="demos"></span></p>
+        </div>
+        <br>
+        <div id="slidecontainer4">
+            <input type="range" min="0" max="255" value="20" class="slider red" id="myRange4">
+            <p>Layer2: R <span id="demo4" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer5">
+            <input type="range" min="0" max="255" value="20" class="slider green" id="myRange5">
+            <p>Layer2: G <span id="demo5" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer6">
+            <input type="range" min="0" max="255" value="20" class="slider blue" id="myRange6">
+            <p>Layer2: B <span id="demo6" class="demos"></span></p>
+        </div>
+        <br>
+        <div id="slidecontainer7">
+            <input type="range" min="0" max="255" value="0" class="slider red" id="myRange7">
+            <p>Layer3: R <span id="demo7" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer8">
+            <input type="range" min="0" max="255" value="0" class="slider green" id="myRange8">
+            <p>Layer3: G <span id="demo8" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer9">
+            <input type="range" min="0" max="255" value="0" class="slider blue" id="myRange9">
+            <p>Layer3: B <span id="demo9" class="demos"></span></p>
+        </div>
+        <br>
+        <div id="slidecontainer10">
+            <input type="range" min="0" max="100" value="50" class="slider" id="xpos">
+            <p>xpos: <span id="demo10" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer11">
+            <input type="range" min="0" max="100" value="50" class="slider" id="ypos">
+            <p>ypos: <span id="demo11" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer12">
+            <input type="range" min="0" max="300" value="70" class="slider" id="spread">
+            <p>spread: <span id="demo12" class="demos"></span></p>
+        </div>
+        <br>
+        <div id="slidecontainer13">
+            <input type="range" min="0" max="255" value="40" class="slider bandw" id="myRange10">
+            <p>Layer1: RGB <span id="demo13" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer14">
+            <input type="range" min="0" max="255" value="20" class="slider bandw" id="myRange11">
+            <p>Layer1: RGB <span id="demo14" class="demos"></span></p>
+        </div>
+        <div id="slidecontainer15">
+            <input type="range" min="0" max="255" value="0" class="slider bandw" id="myRange12">
+            <p>Layer1: RGB <span id="demo15" class="demos"></span></p>
+        </div>
+        <br>
+        <div id="slidecontainer16">
+            <input type="range" min="0" max="360" value="0" class="slider bandw" id="myRange13">
+            <p>Deg: <span id="demo16" class="demos"></span></p>
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <script src="jQuery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

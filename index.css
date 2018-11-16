@@ -1,0 +1,219 @@
+::selection {
+  background: rgba(107, 255, 51, 0.61);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-color: black;
+  background-image: radial-gradient(circle at 50% 50%, rgb(6, 190, 182), rgb(6, 190, 182), rgb(72, 177, 191) 70%);
+}
+
+p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* ------------------IDs------------------------------- */
+
+#copyText {
+  z-index: 100;
+  cursor: pointer;
+}
+
+#genCssDiv {
+  background-color: rgba(255, 255, 255, 0.66);
+  overflow: hidden;
+  cursor: inherit;
+}
+
+#goLeft{
+  top: 50%;
+  height: 90px;
+  width: 60px;
+  float:left;
+  position: fixed;
+  background-color: blue;
+}
+#goRight{
+  top: 50%;
+  height: 90px;
+  width: 60px;
+  right: 0;
+  background-color:green;
+  position: fixed;
+}
+#mainBox>div{
+  height: 20px;
+}
+
+#mainBox {
+  opacity: .45;
+  margin: 100px 400px;
+}
+
+#mainBox:hover {
+  opacity: 1;
+}
+
+@media(max-width:1280px) {
+  #mainBox {
+    margin: 100px 200px;
+  }
+}
+
+@media(max-width:768px) {
+  #mainBox {
+    margin: 80px 60px;
+  }
+  #goLeft{
+    width: 50px;
+  }
+  #goRight{
+    width: 50px;
+  }
+}
+
+#slidecontainer{
+  margin-top: 10px;
+}
+
+#slidecontainer16 {
+  display: none;
+}
+
+#toggleButton{
+  flex:2;
+  flex-basis: 17%;
+  order: 2;
+}
+#selectBackGround{
+  flex:2;
+  flex-basis: 17%;
+}
+#selectBackGround:hover, #toggleButton:hover{
+  cursor: pointer;
+}
+
+#genCssDiv{
+  flex:2;
+  flex-basis: 97%;
+  resize:none;
+}
+#copyText{
+  flex:2;
+  flex-basis: 7%;
+  order: 2;
+}
+
+/* ------------------Classes----------------------------- */
+.displayBox,.menuBox {
+  margin: 0 30px 0px 30px;
+  display: flex;
+  height: 30px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sliderBox {
+  height: 30px;
+  width: 768px;
+}
+
+@media(max-width:768px) {
+  .sliderBox {
+    width: 50%;
+    height: 20px;
+  }
+}
+
+.slider {
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.67), rgba(114, 114, 114, 0.62), rgba(0, 0, 0, 0.69) 70%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  z-index: 100;
+  border-radius: 50%;
+  background: #efebe9;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  z-index: 100;
+  border-radius: 50%;
+  background: #efebe9;
+  cursor: pointer;
+}
+
+.slider.red::-webkit-slider-thumb {
+  background: #af1422;
+}
+
+.slider.red::-moz-range-thumb {
+  background: #af1422;
+}
+
+.slider.green::-webkit-slider-thumb {
+  background: #4CAF50;
+}
+
+.slider.green::-moz-range-thumb {
+  background: #4CAF50;
+}
+
+.slider.blue::-webkit-slider-thumb {
+  background: #0e16af;
+}
+
+.slider.blue::-moz-range-thumb {
+  background: #0e16af;
+}
+
+.slider.bandw::-webkit-slider-thumb {
+  background: linear-gradient(to right, black 0%, black 50%, #000000 50%, white 50%, white 100%);
+}
+
+.slider.bandw::-moz-range-thumb {
+  background: linear-gradient(to right, black 0%, black 50%, #000000 50%, white 50%, white 100%);
+}
+
+.trnsprnt {
+  background-color: rgba(255, 255, 255, 0.66);
+}
+
+.topTitle {
+  text-align: center;
+  padding: 20px 0;
+}
